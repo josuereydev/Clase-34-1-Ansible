@@ -1,0 +1,8 @@
+  name: Verificar si el servicio ssh este corriendo en el nodo
+  hosts: all
+  task:
+    name: Verificar si el servicio ssh esta corriendo
+    service:
+      name: ssh
+      state: started
+
